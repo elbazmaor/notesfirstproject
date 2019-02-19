@@ -1,3 +1,1 @@
-"# detail" 
-"# MyFirstProject" 
-"# projectClass" 
+"# ProjectClass" 
