@@ -1,0 +1,161 @@
+
+body {
+    text-align: center;
+    background: url('../images/plate.jpg');
+    background-size: 100%;
+    margin: 15px 15px 15px 15px;
+    
+}
+.flex {
+    display: flex;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    
+}
+
+h1 {
+  font-family: 'Tangerine', serif;
+  font-weight: bold;
+  font-size: 130px;
+  text-shadow: 4px 4px 4px green;
+  color:#D3D3D3;
+}
+#notecon {
+    margin: auto;
+    width: 660px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 4px, 4px, 4px, #aaa;
+}
+#note {
+    width: 100%;
+    overflow: hidden;
+    
+}
+div > textarea {
+    width: 100%;
+    height: 200px;
+    resize:none;
+    overflow: auto;
+    border: none;
+    border-style: none; 
+    border-color: Transparent; 
+    background: url('../images/note.jpg');
+    margin-top: 100px;
+    
+}
+.inputs {
+    width: 240px !important; 
+    margin-top: 100px;
+    
+}
+
+hr {
+    border: .8px solid gold;
+}
+#newnotes{
+
+    color:yellow;
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 100px;
+   
+}
+
+#notepanel {
+    width: 98%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.panelnote {
+    position: relative;
+    background:url('../images/notepaper.png') no-repeat;
+    width:274px;
+    height: 348px;
+    margin: 10px;
+    border-radius: 5px 5px 5px 5px;
+    margin-left:80px;
+    
+}
+.panelnote > i {
+    position: absolute;
+    right: 2px;
+    top: 50px;
+    cursor: pointer;
+    visibility: hidden;
+
+}
+
+.panelnote:hover i {
+    visibility: visible;
+}
+.textnote {
+    position: absolute;
+    top: 70px;
+    overflow: auto;
+    width: 274px;
+    height:250px;
+    word-wrap: break-word;
+    
+}
+.datenote {
+    position: absolute;
+    top: 320px;  
+    width: 100%;
+    margin: auto;
+    text-align:left;
+   
+}
+#text{
+    font-size: 30px;
+}
+
+@keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  .trans {
+  animation: fadeIn ease-in 1s;
+  }
+
+  #clear{
+      background-color:#ADD8E6;
+       color: #404040;
+       border:2px solid #404040;
+  }
+  #submit{
+      background-color:#FFFACD;
+      color: #404040;
+      border:2px solid #404040;
+  }
+  #colors {
+  
+    width: 100%;;
+    height: 20px;
+    background-color: red;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+  
+  /* Standard syntax */
+  @keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
