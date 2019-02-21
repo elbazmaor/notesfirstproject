@@ -1,5 +1,0 @@
-"# notesproj" 
-"# detial" 
-"# notesproj" 
-"# notesproj" 
-"# notesproject" 

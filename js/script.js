@@ -1,4 +1,4 @@
-// variable declaraitons
+
 var addBtn = document.querySelector("#submit");
 var clrBtn = document.querySelector("#clear");
 var notes = [];
@@ -11,11 +11,10 @@ var storageItemD;
 
 document.onload = showNotes(), attach();
 
-//button events
 addBtn.addEventListener("click", addNote);
 clrBtn.addEventListener("click", clearForm);
 
-// clearing the form and focusing
+
 function clearForm() {
     var textC = document.querySelector("#text");
     var dateC = document.querySelector("#dateinput");
@@ -26,7 +25,7 @@ function clearForm() {
     textC.focus();
 }
 
-//gives the current top note id for adding
+
 function checkIfEmpty() {
     var x = localStorage.getItem("notes");
 
@@ -37,7 +36,7 @@ function checkIfEmpty() {
         return y.length - 1;
     }
 }
-// writes a new enrty and showing the note on screen without reloading the whole list
+
 function addNote() {
     var text = document.querySelector("#text").value;
     var date = document.querySelector("#dateinput").value;
@@ -58,7 +57,6 @@ function addNote() {
     clearForm();
 }
 
-// deletes notes with x ID
 function delNote() {
     notes = JSON.parse(localStorage.getItem("notes"));
     delID = Number(this.id);
@@ -72,7 +70,7 @@ function delNote() {
 
 }
 
-// showing the new note on screen without reloading list
+
 function showNewNote(text, date, time) {
     id++;
     div = document.createElement("div");
@@ -96,7 +94,7 @@ function showNewNote(text, date, time) {
 
 }
 
-//showing notes when document loads
+
 function showNotes() {
 
     storageItem = localStorage.getItem("notes");
@@ -132,7 +130,7 @@ function showNotes() {
 }
 
 
-//attaches following ID to the new added note
+
 function attach() {
     var delBtn = document.querySelectorAll(".fas");
     for (var i = 0; i < delBtn.length; i++) {
